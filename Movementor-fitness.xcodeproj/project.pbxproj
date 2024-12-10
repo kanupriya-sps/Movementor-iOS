@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		CEB50A4E2D082F3600E6B2CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEB50A352D082F3400E6B2CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEB50A3C2D082F3400E6B2CE;
+			remoteInfo = "Movementor-fitness";
+		};
+		CEB50A582D082F3600E6B2CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEB50A352D082F3400E6B2CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEB50A3C2D082F3400E6B2CE;
+			remoteInfo = "Movementor-fitness";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CEB50A3D2D082F3400E6B2CE /* Movementor-fitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Movementor-fitness.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEB50A4D2D082F3600E6B2CE /* Movementor-fitnessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Movementor-fitnessTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEB50A572D082F3600E6B2CE /* Movementor-fitnessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Movementor-fitnessUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		CEB50A3F2D082F3400E6B2CE /* Movementor-fitness */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Movementor-fitness";
+			sourceTree = "<group>";
+		};
+		CEB50A502D082F3600E6B2CE /* Movementor-fitnessTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Movementor-fitnessTests";
+			sourceTree = "<group>";
+		};
+		CEB50A5A2D082F3600E6B2CE /* Movementor-fitnessUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Movementor-fitnessUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEB50A3A2D082F3400E6B2CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEB50A4A2D082F3600E6B2CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEB50A542D082F3600E6B2CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEB50A342D082F3400E6B2CE = {
+			isa = PBXGroup;
+			children = (
+				CEB50A3F2D082F3400E6B2CE /* Movementor-fitness */,
+				CEB50A502D082F3600E6B2CE /* Movementor-fitnessTests */,
+				CEB50A5A2D082F3600E6B2CE /* Movementor-fitnessUITests */,
+				CEB50A3E2D082F3400E6B2CE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEB50A3E2D082F3400E6B2CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEB50A3D2D082F3400E6B2CE /* Movementor-fitness.app */,
+				CEB50A4D2D082F3600E6B2CE /* Movementor-fitnessTests.xctest */,
+				CEB50A572D082F3600E6B2CE /* Movementor-fitnessUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEB50A3C2D082F3400E6B2CE /* Movementor-fitness */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEB50A612D082F3600E6B2CE /* Build configuration list for PBXNativeTarget "Movementor-fitness" */;
+			buildPhases = (
+				CEB50A392D082F3400E6B2CE /* Sources */,
+				CEB50A3A2D082F3400E6B2CE /* Frameworks */,
+				CEB50A3B2D082F3400E6B2CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				CEB50A3F2D082F3400E6B2CE /* Movementor-fitness */,
+			);
+			name = "Movementor-fitness";
+			packageProductDependencies = (
+			);
+			productName = "Movementor-fitness";
+			productReference = CEB50A3D2D082F3400E6B2CE /* Movementor-fitness.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEB50A4C2D082F3600E6B2CE /* Movementor-fitnessTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEB50A642D082F3600E6B2CE /* Build configuration list for PBXNativeTarget "Movementor-fitnessTests" */;
+			buildPhases = (
+				CEB50A492D082F3600E6B2CE /* Sources */,
+				CEB50A4A2D082F3600E6B2CE /* Frameworks */,
+				CEB50A4B2D082F3600E6B2CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEB50A4F2D082F3600E6B2CE /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CEB50A502D082F3600E6B2CE /* Movementor-fitnessTests */,
+			);
+			name = "Movementor-fitnessTests";
+			packageProductDependencies = (
+			);
+			productName = "Movementor-fitnessTests";
+			productReference = CEB50A4D2D082F3600E6B2CE /* Movementor-fitnessTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CEB50A562D082F3600E6B2CE /* Movementor-fitnessUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEB50A672D082F3600E6B2CE /* Build configuration list for PBXNativeTarget "Movementor-fitnessUITests" */;
+			buildPhases = (
+				CEB50A532D082F3600E6B2CE /* Sources */,
+				CEB50A542D082F3600E6B2CE /* Frameworks */,
+				CEB50A552D082F3600E6B2CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEB50A592D082F3600E6B2CE /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CEB50A5A2D082F3600E6B2CE /* Movementor-fitnessUITests */,
+			);
+			name = "Movementor-fitnessUITests";
+			packageProductDependencies = (
+			);
+			productName = "Movementor-fitnessUITests";
+			productReference = CEB50A572D082F3600E6B2CE /* Movementor-fitnessUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEB50A352D082F3400E6B2CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					CEB50A3C2D082F3400E6B2CE = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					CEB50A4C2D082F3600E6B2CE = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = CEB50A3C2D082F3400E6B2CE;
+					};
+					CEB50A562D082F3600E6B2CE = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = CEB50A3C2D082F3400E6B2CE;
+					};
+				};
+			};
+			buildConfigurationList = CEB50A382D082F3400E6B2CE /* Build configuration list for PBXProject "Movementor-fitness" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEB50A342D082F3400E6B2CE;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = CEB50A3E2D082F3400E6B2CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEB50A3C2D082F3400E6B2CE /* Movementor-fitness */,
+				CEB50A4C2D082F3600E6B2CE /* Movementor-fitnessTests */,
+				CEB50A562D082F3600E6B2CE /* Movementor-fitnessUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEB50A3B2D082F3400E6B2CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEB50A4B2D082F3600E6B2CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEB50A552D082F3600E6B2CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEB50A392D082F3400E6B2CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEB50A492D082F3600E6B2CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEB50A532D082F3600E6B2CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEB50A4F2D082F3600E6B2CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEB50A3C2D082F3400E6B2CE /* Movementor-fitness */;
+			targetProxy = CEB50A4E2D082F3600E6B2CE /* PBXContainerItemProxy */;
+		};
+		CEB50A592D082F3600E6B2CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEB50A3C2D082F3400E6B2CE /* Movementor-fitness */;
+			targetProxy = CEB50A582D082F3600E6B2CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CEB50A5F2D082F3600E6B2CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CEB50A602D082F3600E6B2CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEB50A622D082F3600E6B2CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Movementor-fitness/Preview Content\"";
+				DEVELOPMENT_TEAM = 4Q92Z86L4P;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kp.Movementor-fitness";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEB50A632D082F3600E6B2CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Movementor-fitness/Preview Content\"";
+				DEVELOPMENT_TEAM = 4Q92Z86L4P;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kp.Movementor-fitness";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CEB50A652D082F3600E6B2CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4Q92Z86L4P;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kp.Movementor-fitnessTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Movementor-fitness.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Movementor-fitness";
+			};
+			name = Debug;
+		};
+		CEB50A662D082F3600E6B2CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4Q92Z86L4P;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kp.Movementor-fitnessTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Movementor-fitness.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Movementor-fitness";
+			};
+			name = Release;
+		};
+		CEB50A682D082F3600E6B2CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4Q92Z86L4P;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kp.Movementor-fitnessUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Movementor-fitness";
+			};
+			name = Debug;
+		};
+		CEB50A692D082F3600E6B2CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4Q92Z86L4P;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kp.Movementor-fitnessUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Movementor-fitness";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEB50A382D082F3400E6B2CE /* Build configuration list for PBXProject "Movementor-fitness" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEB50A5F2D082F3600E6B2CE /* Debug */,
+				CEB50A602D082F3600E6B2CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEB50A612D082F3600E6B2CE /* Build configuration list for PBXNativeTarget "Movementor-fitness" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEB50A622D082F3600E6B2CE /* Debug */,
+				CEB50A632D082F3600E6B2CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEB50A642D082F3600E6B2CE /* Build configuration list for PBXNativeTarget "Movementor-fitnessTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEB50A652D082F3600E6B2CE /* Debug */,
+				CEB50A662D082F3600E6B2CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEB50A672D082F3600E6B2CE /* Build configuration list for PBXNativeTarget "Movementor-fitnessUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEB50A682D082F3600E6B2CE /* Debug */,
+				CEB50A692D082F3600E6B2CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEB50A352D082F3400E6B2CE /* Project object */;
+}
