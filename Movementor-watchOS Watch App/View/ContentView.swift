@@ -11,6 +11,7 @@ struct ContentView: View {
     
     @State private var steps: Int = MockData.steps
     @State private var pieData: [Double] = MockData.pieChartData
+    @ObservedObject private var phoneConnector = PhoneConnector.shared
     
     var body: some View {
             TabView {
@@ -19,7 +20,7 @@ struct ContentView: View {
                     Text("Steps")
                         .font(.headline)
                         .padding(.bottom, 5)
-                    Text("\(steps)")
+                    Text("\(phoneConnector.steps)")
                         .font(.largeTitle)
                         .fontWeight(.bold)
                         .foregroundColor(.green)
@@ -51,6 +52,11 @@ struct ContentView: View {
                 .cornerRadius(10)
             }
             .tabViewStyle(.verticalPage) // Vertical swipe
+            .onAppear {
+                PhoneConnector.shared.progressReceivedFromPhone = { value in
+                    steps = Int(value)
+                }
+            }
         }
     }
 
