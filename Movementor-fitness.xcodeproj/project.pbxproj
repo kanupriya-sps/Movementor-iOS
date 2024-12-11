@@ -6,7 +6,32 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		CE5478302D094DF3009545E9 /* Movementor-watchOS Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CE54780D2D094DF1009545E9 /* Movementor-watchOS Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
+		CE54781D2D094DF2009545E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEB50A352D082F3400E6B2CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE54780C2D094DF1009545E9;
+			remoteInfo = "Movementor-watchOS Watch App";
+		};
+		CE5478272D094DF3009545E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEB50A352D082F3400E6B2CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE54780C2D094DF1009545E9;
+			remoteInfo = "Movementor-watchOS Watch App";
+		};
+		CE54782E2D094DF3009545E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEB50A352D082F3400E6B2CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE54780C2D094DF1009545E9;
+			remoteInfo = "Movementor-watchOS Watch App";
+		};
 		CEB50A4E2D082F3600E6B2CE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CEB50A352D082F3400E6B2CE /* Project object */;
@@ -23,13 +48,58 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CE5478312D094DF3009545E9 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				CE5478302D094DF3009545E9 /* Movementor-watchOS Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		CE54780D2D094DF1009545E9 /* Movementor-watchOS Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Movementor-watchOS Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE54781C2D094DF2009545E9 /* Movementor-watchOS Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Movementor-watchOS Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE5478262D094DF3009545E9 /* Movementor-watchOS Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Movementor-watchOS Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB50A3D2D082F3400E6B2CE /* Movementor-fitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Movementor-fitness.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB50A4D2D082F3600E6B2CE /* Movementor-fitnessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Movementor-fitnessTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB50A572D082F3600E6B2CE /* Movementor-fitnessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Movementor-fitnessUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		CE5478432D095825009545E9 /* Exceptions for "Movementor-watchOS Watch App" folder in "Movementor-fitness" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Model/MockData.swift,
+			);
+			target = CEB50A3C2D082F3400E6B2CE /* Movementor-fitness */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		CE54780E2D094DF1009545E9 /* Movementor-watchOS Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				CE5478432D095825009545E9 /* Exceptions for "Movementor-watchOS Watch App" folder in "Movementor-fitness" target */,
+			);
+			path = "Movementor-watchOS Watch App";
+			sourceTree = "<group>";
+		};
+		CE54781F2D094DF3009545E9 /* Movementor-watchOS Watch AppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Movementor-watchOS Watch AppTests";
+			sourceTree = "<group>";
+		};
+		CE5478292D094DF3009545E9 /* Movementor-watchOS Watch AppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Movementor-watchOS Watch AppUITests";
+			sourceTree = "<group>";
+		};
 		CEB50A3F2D082F3400E6B2CE /* Movementor-fitness */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Movementor-fitness";
@@ -48,6 +118,27 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CE54780A2D094DF1009545E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE5478192D094DF2009545E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE5478232D094DF3009545E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CEB50A3A2D082F3400E6B2CE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -78,6 +169,9 @@
 				CEB50A3F2D082F3400E6B2CE /* Movementor-fitness */,
 				CEB50A502D082F3600E6B2CE /* Movementor-fitnessTests */,
 				CEB50A5A2D082F3600E6B2CE /* Movementor-fitnessUITests */,
+				CE54780E2D094DF1009545E9 /* Movementor-watchOS Watch App */,
+				CE54781F2D094DF3009545E9 /* Movementor-watchOS Watch AppTests */,
+				CE5478292D094DF3009545E9 /* Movementor-watchOS Watch AppUITests */,
 				CEB50A3E2D082F3400E6B2CE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +182,9 @@
 				CEB50A3D2D082F3400E6B2CE /* Movementor-fitness.app */,
 				CEB50A4D2D082F3600E6B2CE /* Movementor-fitnessTests.xctest */,
 				CEB50A572D082F3600E6B2CE /* Movementor-fitnessUITests.xctest */,
+				CE54780D2D094DF1009545E9 /* Movementor-watchOS Watch App.app */,
+				CE54781C2D094DF2009545E9 /* Movementor-watchOS Watch AppTests.xctest */,
+				CE5478262D094DF3009545E9 /* Movementor-watchOS Watch AppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +192,74 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CE54780C2D094DF1009545E9 /* Movementor-watchOS Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE5478382D094DF3009545E9 /* Build configuration list for PBXNativeTarget "Movementor-watchOS Watch App" */;
+			buildPhases = (
+				CE5478092D094DF1009545E9 /* Sources */,
+				CE54780A2D094DF1009545E9 /* Frameworks */,
+				CE54780B2D094DF1009545E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				CE54780E2D094DF1009545E9 /* Movementor-watchOS Watch App */,
+			);
+			name = "Movementor-watchOS Watch App";
+			packageProductDependencies = (
+			);
+			productName = "Movementor-watchOS Watch App";
+			productReference = CE54780D2D094DF1009545E9 /* Movementor-watchOS Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE54781B2D094DF2009545E9 /* Movementor-watchOS Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE5478392D094DF3009545E9 /* Build configuration list for PBXNativeTarget "Movementor-watchOS Watch AppTests" */;
+			buildPhases = (
+				CE5478182D094DF2009545E9 /* Sources */,
+				CE5478192D094DF2009545E9 /* Frameworks */,
+				CE54781A2D094DF2009545E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE54781E2D094DF2009545E9 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CE54781F2D094DF3009545E9 /* Movementor-watchOS Watch AppTests */,
+			);
+			name = "Movementor-watchOS Watch AppTests";
+			packageProductDependencies = (
+			);
+			productName = "Movementor-watchOS Watch AppTests";
+			productReference = CE54781C2D094DF2009545E9 /* Movementor-watchOS Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE5478252D094DF3009545E9 /* Movementor-watchOS Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE54783A2D094DF3009545E9 /* Build configuration list for PBXNativeTarget "Movementor-watchOS Watch AppUITests" */;
+			buildPhases = (
+				CE5478222D094DF3009545E9 /* Sources */,
+				CE5478232D094DF3009545E9 /* Frameworks */,
+				CE5478242D094DF3009545E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE5478282D094DF3009545E9 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CE5478292D094DF3009545E9 /* Movementor-watchOS Watch AppUITests */,
+			);
+			name = "Movementor-watchOS Watch AppUITests";
+			packageProductDependencies = (
+			);
+			productName = "Movementor-watchOS Watch AppUITests";
+			productReference = CE5478262D094DF3009545E9 /* Movementor-watchOS Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		CEB50A3C2D082F3400E6B2CE /* Movementor-fitness */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEB50A612D082F3600E6B2CE /* Build configuration list for PBXNativeTarget "Movementor-fitness" */;
@@ -102,10 +267,12 @@
 				CEB50A392D082F3400E6B2CE /* Sources */,
 				CEB50A3A2D082F3400E6B2CE /* Frameworks */,
 				CEB50A3B2D082F3400E6B2CE /* Resources */,
+				CE5478312D094DF3009545E9 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CE54782F2D094DF3009545E9 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				CEB50A3F2D082F3400E6B2CE /* Movementor-fitness */,
@@ -173,6 +340,17 @@
 				LastSwiftUpdateCheck = 1610;
 				LastUpgradeCheck = 1610;
 				TargetAttributes = {
+					CE54780C2D094DF1009545E9 = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					CE54781B2D094DF2009545E9 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = CE54780C2D094DF1009545E9;
+					};
+					CE5478252D094DF3009545E9 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = CE54780C2D094DF1009545E9;
+					};
 					CEB50A3C2D082F3400E6B2CE = {
 						CreatedOnToolsVersion = 16.1;
 					};
@@ -203,11 +381,35 @@
 				CEB50A3C2D082F3400E6B2CE /* Movementor-fitness */,
 				CEB50A4C2D082F3600E6B2CE /* Movementor-fitnessTests */,
 				CEB50A562D082F3600E6B2CE /* Movementor-fitnessUITests */,
+				CE54780C2D094DF1009545E9 /* Movementor-watchOS Watch App */,
+				CE54781B2D094DF2009545E9 /* Movementor-watchOS Watch AppTests */,
+				CE5478252D094DF3009545E9 /* Movementor-watchOS Watch AppUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CE54780B2D094DF1009545E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE54781A2D094DF2009545E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE5478242D094DF3009545E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CEB50A3B2D082F3400E6B2CE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -232,6 +434,27 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CE5478092D094DF1009545E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE5478182D094DF2009545E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE5478222D094DF3009545E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CEB50A392D082F3400E6B2CE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -256,6 +479,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		CE54781E2D094DF2009545E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE54780C2D094DF1009545E9 /* Movementor-watchOS Watch App */;
+			targetProxy = CE54781D2D094DF2009545E9 /* PBXContainerItemProxy */;
+		};
+		CE5478282D094DF3009545E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE54780C2D094DF1009545E9 /* Movementor-watchOS Watch App */;
+			targetProxy = CE5478272D094DF3009545E9 /* PBXContainerItemProxy */;
+		};
+		CE54782F2D094DF3009545E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE54780C2D094DF1009545E9 /* Movementor-watchOS Watch App */;
+			targetProxy = CE54782E2D094DF3009545E9 /* PBXContainerItemProxy */;
+		};
 		CEB50A4F2D082F3600E6B2CE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CEB50A3C2D082F3400E6B2CE /* Movementor-fitness */;
@@ -269,6 +507,144 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		CE5478322D094DF3009545E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Movementor-watchOS Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 4Q92Z86L4P;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Movementor-watchOS";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "kp.Movementor-fitness";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kp.Movementor-fitness.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.1;
+			};
+			name = Debug;
+		};
+		CE5478332D094DF3009545E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Movementor-watchOS Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 4Q92Z86L4P;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Movementor-watchOS";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "kp.Movementor-fitness";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kp.Movementor-fitness.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.1;
+			};
+			name = Release;
+		};
+		CE5478342D094DF3009545E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4Q92Z86L4P;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kp.Movementor-watchOS-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Movementor-watchOS Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Movementor-watchOS Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.1;
+			};
+			name = Debug;
+		};
+		CE5478352D094DF3009545E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4Q92Z86L4P;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kp.Movementor-watchOS-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Movementor-watchOS Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Movementor-watchOS Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.1;
+			};
+			name = Release;
+		};
+		CE5478362D094DF3009545E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4Q92Z86L4P;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kp.Movementor-watchOS-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Movementor-watchOS Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.1;
+			};
+			name = Debug;
+		};
+		CE5478372D094DF3009545E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4Q92Z86L4P;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kp.Movementor-watchOS-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Movementor-watchOS Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.1;
+			};
+			name = Release;
+		};
 		CEB50A5F2D082F3600E6B2CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -523,6 +899,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CE5478382D094DF3009545E9 /* Build configuration list for PBXNativeTarget "Movementor-watchOS Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE5478322D094DF3009545E9 /* Debug */,
+				CE5478332D094DF3009545E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE5478392D094DF3009545E9 /* Build configuration list for PBXNativeTarget "Movementor-watchOS Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE5478342D094DF3009545E9 /* Debug */,
+				CE5478352D094DF3009545E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE54783A2D094DF3009545E9 /* Build configuration list for PBXNativeTarget "Movementor-watchOS Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE5478362D094DF3009545E9 /* Debug */,
+				CE5478372D094DF3009545E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CEB50A382D082F3400E6B2CE /* Build configuration list for PBXProject "Movementor-fitness" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
