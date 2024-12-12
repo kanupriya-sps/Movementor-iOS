@@ -42,6 +42,7 @@ struct HomeScreenView: View {
             .cornerRadius(10)
             .padding(.bottom, 30)
         }
+        .navigationBarHidden(true)
     }
 }
 

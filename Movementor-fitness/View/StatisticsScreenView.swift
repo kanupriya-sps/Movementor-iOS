@@ -34,6 +34,7 @@ struct StatisticsScreenView: View {
                 }
             }
         }
+        .navigationBarHidden(true)
         .onAppear {
             if healthKitManager.isHealthDataAvailable {
                 healthKitManager.requestAuthorization()

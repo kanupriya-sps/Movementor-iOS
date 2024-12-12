@@ -20,14 +20,13 @@ struct SignUpView: View {
     }
     
     var body: some View {
-        NavigationStack {
             VStack(spacing: 20) {
                 // Logo
                 Image("appLogo")
                     .resizable()
                     .frame(width: 80, height: 80)
                     .foregroundColor(.blue)
-                    .padding(.top, 80)
+                    .padding(.top, 50)
                     .padding(.bottom, 20)
                 Text("Sign Up")
                     .font(.system(size: 40))
@@ -97,7 +96,7 @@ struct SignUpView: View {
                 Spacer()
                 
                 NavigationLink(
-                    destination: TabBarView(),
+                    destination: TabBarView().navigationBarBackButtonHidden(true),
                     isActive: $navigateToTabBar,
                     label: {
                         EmptyView()
@@ -105,7 +104,6 @@ struct SignUpView: View {
                 )
             }
             .background(Color.white.edgesIgnoringSafeArea(.all))
-        }
     }
 }
 
