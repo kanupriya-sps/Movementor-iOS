@@ -48,3 +48,7 @@ struct HomeScreenView: View {
 #Preview {
     HomeScreenView()
 }
+
+
+
+// rgba(249, 116, 210, 0.16)

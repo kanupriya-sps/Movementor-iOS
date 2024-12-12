@@ -23,7 +23,7 @@ struct ContentView: View {
                         .frame(width: UIScreen.main.bounds.width, alignment: .leading)
                         .padding(.leading, 30)
                         .padding(.bottom, 40)
-                    NavigationLink(destination: TabBarView()) {
+                    NavigationLink(destination: SignUpView()) {
                         HStack {
                             Text("Get Started")
                                 .font(.headline)

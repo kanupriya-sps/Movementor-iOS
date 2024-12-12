@@ -37,7 +37,7 @@ extension WatchConnector:WCSessionDelegate {
             print("session activation failed with error: \(error.localizedDescription)")
             return
         } else {
-            print("session actibated successfully")
+            print("session activated successfully")
         }
     }
     
