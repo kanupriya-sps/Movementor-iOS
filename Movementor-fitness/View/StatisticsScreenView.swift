@@ -10,6 +10,7 @@ import SwiftUI
 struct StatisticsScreenView: View {
     
     @StateObject private var healthKitManager = HealthKitManager()
+    @StateObject private var activityManager = ActivityManager()
     
     var body: some View {
         VStack {
@@ -33,6 +34,11 @@ struct StatisticsScreenView: View {
                     .padding()
                 }
             }
+            Text("Ideal Duration")
+                .font(.headline)
+                .padding(.top, 50)
+            Text("\(activityManager.lastIdealState)")
+                .font(.caption)
         }
         .navigationBarHidden(true)
         .onAppear {
@@ -42,6 +48,7 @@ struct StatisticsScreenView: View {
             } else {
                 print("Health data is not available.")
             }
+            activityManager.requestAuthorization()
         }
     }
 }
