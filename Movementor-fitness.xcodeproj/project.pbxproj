@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -72,7 +72,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		CE5478432D095825009545E9 /* Exceptions for "Movementor-watchOS Watch App" folder in "Movementor-fitness" target */ = {
+		CE5478432D095825009545E9 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Model/MockData.swift,
@@ -82,39 +82,12 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		CE54780E2D094DF1009545E9 /* Movementor-watchOS Watch App */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				CE5478432D095825009545E9 /* Exceptions for "Movementor-watchOS Watch App" folder in "Movementor-fitness" target */,
-			);
-			path = "Movementor-watchOS Watch App";
-			sourceTree = "<group>";
-		};
-		CE54781F2D094DF3009545E9 /* Movementor-watchOS Watch AppTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Movementor-watchOS Watch AppTests";
-			sourceTree = "<group>";
-		};
-		CE5478292D094DF3009545E9 /* Movementor-watchOS Watch AppUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Movementor-watchOS Watch AppUITests";
-			sourceTree = "<group>";
-		};
-		CEB50A3F2D082F3400E6B2CE /* Movementor-fitness */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Movementor-fitness";
-			sourceTree = "<group>";
-		};
-		CEB50A502D082F3600E6B2CE /* Movementor-fitnessTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Movementor-fitnessTests";
-			sourceTree = "<group>";
-		};
-		CEB50A5A2D082F3600E6B2CE /* Movementor-fitnessUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Movementor-fitnessUITests";
-			sourceTree = "<group>";
-		};
+		CE54780E2D094DF1009545E9 /* Movementor-watchOS Watch App */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (CE5478432D095825009545E9 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = "Movementor-watchOS Watch App"; sourceTree = "<group>"; };
+		CE54781F2D094DF3009545E9 /* Movementor-watchOS Watch AppTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Movementor-watchOS Watch AppTests"; sourceTree = "<group>"; };
+		CE5478292D094DF3009545E9 /* Movementor-watchOS Watch AppUITests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Movementor-watchOS Watch AppUITests"; sourceTree = "<group>"; };
+		CEB50A3F2D082F3400E6B2CE /* Movementor-fitness */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Movementor-fitness"; sourceTree = "<group>"; };
+		CEB50A502D082F3600E6B2CE /* Movementor-fitnessTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Movementor-fitnessTests"; sourceTree = "<group>"; };
+		CEB50A5A2D082F3600E6B2CE /* Movementor-fitnessUITests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Movementor-fitnessUITests"; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -365,6 +338,7 @@
 				};
 			};
 			buildConfigurationList = CEB50A382D082F3400E6B2CE /* Build configuration list for PBXProject "Movementor-fitness" */;
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -373,7 +347,6 @@
 			);
 			mainGroup = CEB50A342D082F3400E6B2CE;
 			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = CEB50A3E2D082F3400E6B2CE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
