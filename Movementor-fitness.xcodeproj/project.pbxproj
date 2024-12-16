@@ -3,11 +3,41 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 70;
+	objectVersion = 63;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		CE5478302D094DF3009545E9 /* Movementor-watchOS Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CE54780D2D094DF1009545E9 /* Movementor-watchOS Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CE5478882D104937009545E9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5478782D104937009545E9 /* Preview Assets.xcassets */; };
+		CE5478892D104937009545E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5478832D104937009545E9 /* Assets.xcassets */; };
+		CE54788A2D104937009545E9 /* ActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5478722D104937009545E9 /* ActivityManager.swift */; };
+		CE54788B2D104937009545E9 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5478732D104937009545E9 /* HealthKitManager.swift */; };
+		CE54788C2D104937009545E9 /* MockHealthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5478752D104937009545E9 /* MockHealthStore.swift */; };
+		CE54788D2D104937009545E9 /* UserDetailsMockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5478762D104937009545E9 /* UserDetailsMockData.swift */; };
+		CE54788E2D104937009545E9 /* ActivityCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE54787A2D104937009545E9 /* ActivityCardView.swift */; };
+		CE54788F2D104937009545E9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE54787B2D104937009545E9 /* ContentView.swift */; };
+		CE5478902D104937009545E9 /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE54787C2D104937009545E9 /* HomeScreenView.swift */; };
+		CE5478912D104937009545E9 /* ProfileScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE54787D2D104937009545E9 /* ProfileScreenView.swift */; };
+		CE5478922D104937009545E9 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE54787E2D104937009545E9 /* SignUpView.swift */; };
+		CE5478932D104937009545E9 /* StatCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE54787F2D104937009545E9 /* StatCardView.swift */; };
+		CE5478942D104937009545E9 /* StatisticsScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5478802D104937009545E9 /* StatisticsScreenView.swift */; };
+		CE5478952D104937009545E9 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5478812D104937009545E9 /* TabBarView.swift */; };
+		CE5478962D104937009545E9 /* Movementor_fitnessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5478842D104937009545E9 /* Movementor_fitnessApp.swift */; };
+		CE5478972D104937009545E9 /* WatchConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5478862D104937009545E9 /* WatchConnector.swift */; };
+		CE54789B2D104948009545E9 /* HealthKitManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5478982D104948009545E9 /* HealthKitManagerTest.swift */; };
+		CE54789C2D104948009545E9 /* Movementor_fitnessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5478992D104948009545E9 /* Movementor_fitnessTests.swift */; };
+		CE5478A02D10494D009545E9 /* Movementor_fitnessUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE54789D2D10494D009545E9 /* Movementor_fitnessUITests.swift */; };
+		CE5478A12D10494D009545E9 /* Movementor_fitnessUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE54789E2D10494D009545E9 /* Movementor_fitnessUITestsLaunchTests.swift */; };
+		CE5478A42D104953009545E9 /* Movementor_watchOS_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5478A22D104953009545E9 /* Movementor_watchOS_Watch_AppTests.swift */; };
+		CE5478A82D104955009545E9 /* Movementor_watchOS_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5478A52D104955009545E9 /* Movementor_watchOS_Watch_AppUITests.swift */; };
+		CE5478A92D104955009545E9 /* Movementor_watchOS_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5478A62D104955009545E9 /* Movementor_watchOS_Watch_AppUITestsLaunchTests.swift */; };
+		CE5478B52D104958009545E9 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5478AA2D104958009545E9 /* MockData.swift */; };
+		CE5478B62D104958009545E9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5478AE2D104958009545E9 /* ContentView.swift */; };
+		CE5478B72D104958009545E9 /* Movementor_watchOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5478B12D104958009545E9 /* Movementor_watchOSApp.swift */; };
+		CE5478B82D104958009545E9 /* PhoneConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5478B32D104958009545E9 /* PhoneConnector.swift */; };
+		CE5478B92D104958009545E9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5478AC2D104958009545E9 /* Preview Assets.xcassets */; };
+		CE5478BA2D104958009545E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5478B02D104958009545E9 /* Assets.xcassets */; };
+		CE5478BB2D104958009545E9 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5478AA2D104958009545E9 /* MockData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,29 +96,41 @@
 		CE54780D2D094DF1009545E9 /* Movementor-watchOS Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Movementor-watchOS Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE54781C2D094DF2009545E9 /* Movementor-watchOS Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Movementor-watchOS Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE5478262D094DF3009545E9 /* Movementor-watchOS Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Movementor-watchOS Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE5478722D104937009545E9 /* ActivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityManager.swift; sourceTree = "<group>"; };
+		CE5478732D104937009545E9 /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
+		CE5478752D104937009545E9 /* MockHealthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHealthStore.swift; sourceTree = "<group>"; };
+		CE5478762D104937009545E9 /* UserDetailsMockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsMockData.swift; sourceTree = "<group>"; };
+		CE5478782D104937009545E9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CE54787A2D104937009545E9 /* ActivityCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCardView.swift; sourceTree = "<group>"; };
+		CE54787B2D104937009545E9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CE54787C2D104937009545E9 /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
+		CE54787D2D104937009545E9 /* ProfileScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreenView.swift; sourceTree = "<group>"; };
+		CE54787E2D104937009545E9 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		CE54787F2D104937009545E9 /* StatCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatCardView.swift; sourceTree = "<group>"; };
+		CE5478802D104937009545E9 /* StatisticsScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsScreenView.swift; sourceTree = "<group>"; };
+		CE5478812D104937009545E9 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		CE5478832D104937009545E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE5478842D104937009545E9 /* Movementor_fitnessApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movementor_fitnessApp.swift; sourceTree = "<group>"; };
+		CE5478852D104937009545E9 /* Movementor-fitness.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Movementor-fitness.entitlements"; sourceTree = "<group>"; };
+		CE5478862D104937009545E9 /* WatchConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnector.swift; sourceTree = "<group>"; };
+		CE5478982D104948009545E9 /* HealthKitManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManagerTest.swift; sourceTree = "<group>"; };
+		CE5478992D104948009545E9 /* Movementor_fitnessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movementor_fitnessTests.swift; sourceTree = "<group>"; };
+		CE54789D2D10494D009545E9 /* Movementor_fitnessUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movementor_fitnessUITests.swift; sourceTree = "<group>"; };
+		CE54789E2D10494D009545E9 /* Movementor_fitnessUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movementor_fitnessUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CE5478A22D104953009545E9 /* Movementor_watchOS_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movementor_watchOS_Watch_AppTests.swift; sourceTree = "<group>"; };
+		CE5478A52D104955009545E9 /* Movementor_watchOS_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movementor_watchOS_Watch_AppUITests.swift; sourceTree = "<group>"; };
+		CE5478A62D104955009545E9 /* Movementor_watchOS_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movementor_watchOS_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CE5478AA2D104958009545E9 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		CE5478AC2D104958009545E9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CE5478AE2D104958009545E9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CE5478B02D104958009545E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE5478B12D104958009545E9 /* Movementor_watchOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movementor_watchOSApp.swift; sourceTree = "<group>"; };
+		CE5478B22D104958009545E9 /* Movementor-watchOS Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Movementor-watchOS Watch App.entitlements"; sourceTree = "<group>"; };
+		CE5478B32D104958009545E9 /* PhoneConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneConnector.swift; sourceTree = "<group>"; };
 		CEB50A3D2D082F3400E6B2CE /* Movementor-fitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Movementor-fitness.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB50A4D2D082F3600E6B2CE /* Movementor-fitnessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Movementor-fitnessTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB50A572D082F3600E6B2CE /* Movementor-fitnessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Movementor-fitnessUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		CE5478432D095825009545E9 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Model/MockData.swift,
-			);
-			target = CEB50A3C2D082F3400E6B2CE /* Movementor-fitness */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		CE54780E2D094DF1009545E9 /* Movementor-watchOS Watch App */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (CE5478432D095825009545E9 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = "Movementor-watchOS Watch App"; sourceTree = "<group>"; };
-		CE54781F2D094DF3009545E9 /* Movementor-watchOS Watch AppTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Movementor-watchOS Watch AppTests"; sourceTree = "<group>"; };
-		CE5478292D094DF3009545E9 /* Movementor-watchOS Watch AppUITests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Movementor-watchOS Watch AppUITests"; sourceTree = "<group>"; };
-		CEB50A3F2D082F3400E6B2CE /* Movementor-fitness */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Movementor-fitness"; sourceTree = "<group>"; };
-		CEB50A502D082F3600E6B2CE /* Movementor-fitnessTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Movementor-fitnessTests"; sourceTree = "<group>"; };
-		CEB50A5A2D082F3600E6B2CE /* Movementor-fitnessUITests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Movementor-fitnessUITests"; sourceTree = "<group>"; };
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CE54780A2D094DF1009545E9 /* Frameworks */ = {
@@ -136,15 +178,144 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE5478742D104937009545E9 /* HealthKit */ = {
+			isa = PBXGroup;
+			children = (
+				CE5478722D104937009545E9 /* ActivityManager.swift */,
+				CE5478732D104937009545E9 /* HealthKitManager.swift */,
+			);
+			path = HealthKit;
+			sourceTree = "<group>";
+		};
+		CE5478772D104937009545E9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE5478752D104937009545E9 /* MockHealthStore.swift */,
+				CE5478762D104937009545E9 /* UserDetailsMockData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE5478792D104937009545E9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CE5478782D104937009545E9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CE5478822D104937009545E9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE54787A2D104937009545E9 /* ActivityCardView.swift */,
+				CE54787B2D104937009545E9 /* ContentView.swift */,
+				CE54787C2D104937009545E9 /* HomeScreenView.swift */,
+				CE54787D2D104937009545E9 /* ProfileScreenView.swift */,
+				CE54787E2D104937009545E9 /* SignUpView.swift */,
+				CE54787F2D104937009545E9 /* StatCardView.swift */,
+				CE5478802D104937009545E9 /* StatisticsScreenView.swift */,
+				CE5478812D104937009545E9 /* TabBarView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE5478872D104937009545E9 /* Movementor-fitness */ = {
+			isa = PBXGroup;
+			children = (
+				CE5478742D104937009545E9 /* HealthKit */,
+				CE5478772D104937009545E9 /* Model */,
+				CE5478792D104937009545E9 /* Preview Content */,
+				CE5478822D104937009545E9 /* View */,
+				CE5478832D104937009545E9 /* Assets.xcassets */,
+				CE5478842D104937009545E9 /* Movementor_fitnessApp.swift */,
+				CE5478852D104937009545E9 /* Movementor-fitness.entitlements */,
+				CE5478862D104937009545E9 /* WatchConnector.swift */,
+			);
+			path = "Movementor-fitness";
+			sourceTree = "<group>";
+		};
+		CE54789A2D104948009545E9 /* Movementor-fitnessTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE5478982D104948009545E9 /* HealthKitManagerTest.swift */,
+				CE5478992D104948009545E9 /* Movementor_fitnessTests.swift */,
+			);
+			path = "Movementor-fitnessTests";
+			sourceTree = "<group>";
+		};
+		CE54789F2D10494D009545E9 /* Movementor-fitnessUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE54789D2D10494D009545E9 /* Movementor_fitnessUITests.swift */,
+				CE54789E2D10494D009545E9 /* Movementor_fitnessUITestsLaunchTests.swift */,
+			);
+			path = "Movementor-fitnessUITests";
+			sourceTree = "<group>";
+		};
+		CE5478A32D104953009545E9 /* Movementor-watchOS Watch AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE5478A22D104953009545E9 /* Movementor_watchOS_Watch_AppTests.swift */,
+			);
+			path = "Movementor-watchOS Watch AppTests";
+			sourceTree = "<group>";
+		};
+		CE5478A72D104955009545E9 /* Movementor-watchOS Watch AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE5478A52D104955009545E9 /* Movementor_watchOS_Watch_AppUITests.swift */,
+				CE5478A62D104955009545E9 /* Movementor_watchOS_Watch_AppUITestsLaunchTests.swift */,
+			);
+			path = "Movementor-watchOS Watch AppUITests";
+			sourceTree = "<group>";
+		};
+		CE5478AB2D104958009545E9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE5478AA2D104958009545E9 /* MockData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE5478AD2D104958009545E9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CE5478AC2D104958009545E9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CE5478AF2D104958009545E9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE5478AE2D104958009545E9 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE5478B42D104958009545E9 /* Movementor-watchOS Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				CE5478AB2D104958009545E9 /* Model */,
+				CE5478AD2D104958009545E9 /* Preview Content */,
+				CE5478AF2D104958009545E9 /* View */,
+				CE5478B02D104958009545E9 /* Assets.xcassets */,
+				CE5478B12D104958009545E9 /* Movementor_watchOSApp.swift */,
+				CE5478B22D104958009545E9 /* Movementor-watchOS Watch App.entitlements */,
+				CE5478B32D104958009545E9 /* PhoneConnector.swift */,
+			);
+			path = "Movementor-watchOS Watch App";
+			sourceTree = "<group>";
+		};
 		CEB50A342D082F3400E6B2CE = {
 			isa = PBXGroup;
 			children = (
-				CEB50A3F2D082F3400E6B2CE /* Movementor-fitness */,
-				CEB50A502D082F3600E6B2CE /* Movementor-fitnessTests */,
-				CEB50A5A2D082F3600E6B2CE /* Movementor-fitnessUITests */,
-				CE54780E2D094DF1009545E9 /* Movementor-watchOS Watch App */,
-				CE54781F2D094DF3009545E9 /* Movementor-watchOS Watch AppTests */,
-				CE5478292D094DF3009545E9 /* Movementor-watchOS Watch AppUITests */,
+				CE5478872D104937009545E9 /* Movementor-fitness */,
+				CE54789A2D104948009545E9 /* Movementor-fitnessTests */,
+				CE54789F2D10494D009545E9 /* Movementor-fitnessUITests */,
+				CE5478B42D104958009545E9 /* Movementor-watchOS Watch App */,
+				CE5478A32D104953009545E9 /* Movementor-watchOS Watch AppTests */,
+				CE5478A72D104955009545E9 /* Movementor-watchOS Watch AppUITests */,
 				CEB50A3E2D082F3400E6B2CE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -177,9 +348,6 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				CE54780E2D094DF1009545E9 /* Movementor-watchOS Watch App */,
-			);
 			name = "Movementor-watchOS Watch App";
 			packageProductDependencies = (
 			);
@@ -200,9 +368,6 @@
 			dependencies = (
 				CE54781E2D094DF2009545E9 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				CE54781F2D094DF3009545E9 /* Movementor-watchOS Watch AppTests */,
-			);
 			name = "Movementor-watchOS Watch AppTests";
 			packageProductDependencies = (
 			);
@@ -222,9 +387,6 @@
 			);
 			dependencies = (
 				CE5478282D094DF3009545E9 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				CE5478292D094DF3009545E9 /* Movementor-watchOS Watch AppUITests */,
 			);
 			name = "Movementor-watchOS Watch AppUITests";
 			packageProductDependencies = (
@@ -247,9 +409,6 @@
 			dependencies = (
 				CE54782F2D094DF3009545E9 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				CEB50A3F2D082F3400E6B2CE /* Movementor-fitness */,
-			);
 			name = "Movementor-fitness";
 			packageProductDependencies = (
 			);
@@ -270,9 +429,6 @@
 			dependencies = (
 				CEB50A4F2D082F3600E6B2CE /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				CEB50A502D082F3600E6B2CE /* Movementor-fitnessTests */,
-			);
 			name = "Movementor-fitnessTests";
 			packageProductDependencies = (
 			);
@@ -292,9 +448,6 @@
 			);
 			dependencies = (
 				CEB50A592D082F3600E6B2CE /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				CEB50A5A2D082F3600E6B2CE /* Movementor-fitnessUITests */,
 			);
 			name = "Movementor-fitnessUITests";
 			packageProductDependencies = (
@@ -366,6 +519,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE5478B92D104958009545E9 /* Preview Assets.xcassets in Resources */,
+				CE5478BA2D104958009545E9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +542,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE5478882D104937009545E9 /* Preview Assets.xcassets in Resources */,
+				CE5478892D104937009545E9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +568,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE5478B52D104958009545E9 /* MockData.swift in Sources */,
+				CE5478B62D104958009545E9 /* ContentView.swift in Sources */,
+				CE5478B72D104958009545E9 /* Movementor_watchOSApp.swift in Sources */,
+				CE5478B82D104958009545E9 /* PhoneConnector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +579,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE5478A42D104953009545E9 /* Movementor_watchOS_Watch_AppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +587,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE5478A82D104955009545E9 /* Movementor_watchOS_Watch_AppUITests.swift in Sources */,
+				CE5478A92D104955009545E9 /* Movementor_watchOS_Watch_AppUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +596,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE54788A2D104937009545E9 /* ActivityManager.swift in Sources */,
+				CE54788B2D104937009545E9 /* HealthKitManager.swift in Sources */,
+				CE54788C2D104937009545E9 /* MockHealthStore.swift in Sources */,
+				CE54788D2D104937009545E9 /* UserDetailsMockData.swift in Sources */,
+				CE5478BB2D104958009545E9 /* MockData.swift in Sources */,
+				CE54788E2D104937009545E9 /* ActivityCardView.swift in Sources */,
+				CE54788F2D104937009545E9 /* ContentView.swift in Sources */,
+				CE5478902D104937009545E9 /* HomeScreenView.swift in Sources */,
+				CE5478912D104937009545E9 /* ProfileScreenView.swift in Sources */,
+				CE5478922D104937009545E9 /* SignUpView.swift in Sources */,
+				CE5478932D104937009545E9 /* StatCardView.swift in Sources */,
+				CE5478942D104937009545E9 /* StatisticsScreenView.swift in Sources */,
+				CE5478952D104937009545E9 /* TabBarView.swift in Sources */,
+				CE5478962D104937009545E9 /* Movementor_fitnessApp.swift in Sources */,
+				CE5478972D104937009545E9 /* WatchConnector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +618,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE54789B2D104948009545E9 /* HealthKitManagerTest.swift in Sources */,
+				CE54789C2D104948009545E9 /* Movementor_fitnessTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +627,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE5478A02D10494D009545E9 /* Movementor_fitnessUITests.swift in Sources */,
+				CE5478A12D10494D009545E9 /* Movementor_fitnessUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
