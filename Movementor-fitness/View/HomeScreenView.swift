@@ -11,6 +11,7 @@ struct HomeScreenView: View {
     
     @State private var steps: Int = 0
     @State private var heartRate: Int = 0
+    @State private var name: String = PersonalDetails.name
     @StateObject private var healthKitManager = HealthKitManager()
     
     var body: some View {
@@ -19,6 +20,24 @@ struct HomeScreenView: View {
                 
                 // Your Stats Section
                 VStack(spacing: 15) {
+                    HStack(spacing: 15) {
+                        Image("profileIcon")
+                            .resizable()
+                            .frame(width: 60, height: 60)
+                            .clipShape(Circle())
+                        Text("\(name)")
+                            .font(.system(size: 22))
+                            .bold()
+                        Spacer()
+                        Button(action: {
+                            // setting action
+                        }) {
+                            Image("setting")
+                                .resizable()
+                                .frame(width: 30, height: 30)
+                        }
+                    }
+                    .padding(.horizontal, 20)
                     HStack {
                         Text("Your Stats")
                             .font(.headline)
@@ -55,7 +74,7 @@ struct HomeScreenView: View {
                                     .resizable()
                                     .foregroundStyle(Color.pink)
                                     .frame(width: 13, height: 13)
-                                Text("1,116.5 ")
+                                Text("\(healthKitManager.caloriesBurned, specifier: "%.2f")")
                                     .font(.subheadline)
                                     .foregroundColor(.pink)
                                 Text("out of 2,000 cal.")
@@ -113,7 +132,7 @@ struct HomeScreenView: View {
                     VStack(spacing: 2) {
                         ActivityCardView(
                             time: "Today, 08:10 AM",
-                            calories: "238.2 cal",
+                            calories: "\(Double(healthKitManager.caloriesBurned)) cal",
                             iconName: "jogging",
                             distance: "2.32/5.00 miles",
                             activity: "Jogging",
@@ -122,18 +141,18 @@ struct HomeScreenView: View {
                         )
                         ActivityCardView(
                             time: "Today, 06:30 AM",
-                            calories: "563.4 cal",
+                            calories: "\(Double(healthKitManager.caloriesBurned)) cal",
                             iconName: "cycling",
-                            distance: "10.00/10.00 miles",
+                            distance: "\(Int(healthKitManager.cyclingTime))/10.00 miles",
                             activity: "Cycling",
                             statusImage: "checkmark.circle.fill",
                             iconColor: .green
                         )
                         ActivityCardView(
                             time: "Today, 06:00 AM",
-                            calories: "151.0 cal",
+                            calories: "\(Double(healthKitManager.caloriesBurned)) cal",
                             iconName: "yoga",
-                            distance: "30/30 min",
+                            distance: "\(Int(healthKitManager.yogaTime))/30 min",
                             activity: "Yoga",
                             statusImage: "checkmark.circle.fill",
                             iconColor: .green
