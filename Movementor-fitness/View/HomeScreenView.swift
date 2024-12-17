@@ -13,8 +13,8 @@ struct HomeScreenView: View {
     @State private var heartRate: Int = 0
     @State private var name: String = PersonalDetails.name
     @State private var showActionSheet: Bool = false  // State to toggle ActionSheet
-    @State private var navigateToScreen1 = false
-    @State private var navigateToScreen2 = false
+    @State private var navigateToSetGoalsScreen = false
+    @State private var navigateToAddActivityScreen = false
     
     @StateObject private var healthKitManager = HealthKitManager()
     
@@ -197,17 +197,17 @@ struct HomeScreenView: View {
             .overlay(
                 AddActionSheetView(isPresented: $showActionSheet) { option in
                     if option == "setGoals" {
-                        navigateToScreen1 = true
+                        navigateToSetGoalsScreen = true
                     } else if option == "addActivity" {
-                        navigateToScreen2 = true
+                        navigateToAddActivityScreen = true
                     }
                 } // Calling the custom ActionSheet View
             )
-            .navigationDestination(isPresented: $navigateToScreen1) {
-                SetGoalsView()
+            .navigationDestination(isPresented: $navigateToSetGoalsScreen) {
+                SetGoalsScreenView()
             }
-            .navigationDestination(isPresented: $navigateToScreen2) {
-                AddActivityView()
+            .navigationDestination(isPresented: $navigateToAddActivityScreen) {
+                AddActivityScreenView()
             }
         }
         .background(Color(.white))
