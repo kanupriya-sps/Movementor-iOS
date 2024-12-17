@@ -47,7 +47,7 @@ struct ProfileScreenView: View {
                             .font(.system(size: 16))
                             .bold()
                             .frame(width: 60, height: 30)
-                            .background(Color(red: 0.9686, green: 0.3569, blue: 0.6157))
+                            .background(Color("pink"))
                             .foregroundColor(.white)
                             .cornerRadius(15)
                     }
@@ -92,7 +92,7 @@ struct ProfileScreenView: View {
                             VStack {
                                 Spacer()
                                 Rectangle()
-                                    .fill(day == 5 ? Color.black : Color.gray)
+                                    .fill(day == 5 ? Color("pink") : Color("lightPink"))
                                     .frame(width: 20, height: CGFloat.random(in: 50...200))
                                 
                                 Text(["S", "M", "T", "W", "T", "F", "S"][day])
@@ -160,7 +160,7 @@ struct ProfileScreenView: View {
                     HStack {
                         HStack {
                             Image(systemName: "moon.fill")
-                                .foregroundColor(.pink)
+                                .foregroundColor(Color("pink"))
                             Text("Bed time")
                                 .font(.subheadline)
                         }

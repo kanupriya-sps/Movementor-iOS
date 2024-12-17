@@ -35,7 +35,7 @@ struct ContentView: View {
                         }
                         .padding()
                         .frame(maxWidth: .infinity)
-                        .background(Color(red: 0.9686, green: 0.3569, blue: 0.6157))
+                        .background(Color("pink"))
                         .cornerRadius(10)
                         .padding(.horizontal, 16)
                     }
