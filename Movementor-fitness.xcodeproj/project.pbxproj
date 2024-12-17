@@ -323,9 +323,9 @@
 			isa = PBXGroup;
 			children = (
 				CE5478872D104937009545E9 /* Movementor-fitness */,
+				CE5478B42D104958009545E9 /* Movementor-watchOS Watch App */,
 				CE54789A2D104948009545E9 /* Movementor-fitnessTests */,
 				CE54789F2D10494D009545E9 /* Movementor-fitnessUITests */,
-				CE5478B42D104958009545E9 /* Movementor-watchOS Watch App */,
 				CE5478A32D104953009545E9 /* Movementor-watchOS Watch AppTests */,
 				CE5478A72D104955009545E9 /* Movementor-watchOS Watch AppUITests */,
 				CEB50A3E2D082F3400E6B2CE /* Products */,
