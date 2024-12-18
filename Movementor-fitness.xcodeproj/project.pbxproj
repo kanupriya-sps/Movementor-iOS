@@ -42,6 +42,9 @@
 		CEB3EBD42D1158E000F8CE6B /* AddActionSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3EBD32D1158E000F8CE6B /* AddActionSheetView.swift */; };
 		CEB3EBD62D11689000F8CE6B /* SetGoalsScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3EBD52D11689000F8CE6B /* SetGoalsScreenView.swift */; };
 		CEB3EBD82D11689E00F8CE6B /* AddActivityScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3EBD72D11689E00F8CE6B /* AddActivityScreenView.swift */; };
+		CEB3EBDA2D119B6000F8CE6B /* GoalActivitySelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3EBD92D119B6000F8CE6B /* GoalActivitySelectionView.swift */; };
+		CEB3EBDC2D11AE0400F8CE6B /* UserGoalsMockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3EBDB2D11AE0400F8CE6B /* UserGoalsMockData.swift */; };
+		CEB3EBDE2D128EBD00F8CE6B /* GoalsSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3EBDD2D128EBD00F8CE6B /* GoalsSummaryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +138,9 @@
 		CEB3EBD32D1158E000F8CE6B /* AddActionSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddActionSheetView.swift; sourceTree = "<group>"; };
 		CEB3EBD52D11689000F8CE6B /* SetGoalsScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetGoalsScreenView.swift; sourceTree = "<group>"; };
 		CEB3EBD72D11689E00F8CE6B /* AddActivityScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddActivityScreenView.swift; sourceTree = "<group>"; };
+		CEB3EBD92D119B6000F8CE6B /* GoalActivitySelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalActivitySelectionView.swift; sourceTree = "<group>"; };
+		CEB3EBDB2D11AE0400F8CE6B /* UserGoalsMockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserGoalsMockData.swift; sourceTree = "<group>"; };
+		CEB3EBDD2D128EBD00F8CE6B /* GoalsSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsSummaryView.swift; sourceTree = "<group>"; };
 		CEB50A3D2D082F3400E6B2CE /* Movementor-fitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Movementor-fitness.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB50A4D2D082F3600E6B2CE /* Movementor-fitnessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Movementor-fitnessTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB50A572D082F3600E6B2CE /* Movementor-fitnessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Movementor-fitnessUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -200,6 +206,7 @@
 			children = (
 				CE5478752D104937009545E9 /* MockHealthStore.swift */,
 				CE5478762D104937009545E9 /* UserDetailsMockData.swift */,
+				CEB3EBDB2D11AE0400F8CE6B /* UserGoalsMockData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -227,6 +234,8 @@
 				CEB3EBD32D1158E000F8CE6B /* AddActionSheetView.swift */,
 				CEB3EBD52D11689000F8CE6B /* SetGoalsScreenView.swift */,
 				CEB3EBD72D11689E00F8CE6B /* AddActivityScreenView.swift */,
+				CEB3EBD92D119B6000F8CE6B /* GoalActivitySelectionView.swift */,
+				CEB3EBDD2D128EBD00F8CE6B /* GoalsSummaryView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -610,15 +619,18 @@
 				CE54788A2D104937009545E9 /* ActivityManager.swift in Sources */,
 				CE54788B2D104937009545E9 /* HealthKitManager.swift in Sources */,
 				CEB3EBD62D11689000F8CE6B /* SetGoalsScreenView.swift in Sources */,
+				CEB3EBDA2D119B6000F8CE6B /* GoalActivitySelectionView.swift in Sources */,
 				CE54788C2D104937009545E9 /* MockHealthStore.swift in Sources */,
 				CE54788D2D104937009545E9 /* UserDetailsMockData.swift in Sources */,
 				CE5478BB2D104958009545E9 /* MockData.swift in Sources */,
 				CE54788E2D104937009545E9 /* ActivityCardView.swift in Sources */,
 				CE54788F2D104937009545E9 /* ContentView.swift in Sources */,
+				CEB3EBDC2D11AE0400F8CE6B /* UserGoalsMockData.swift in Sources */,
 				CE5478902D104937009545E9 /* HomeScreenView.swift in Sources */,
 				CE5478BD2D11471A009545E9 /* ScrollingDateView.swift in Sources */,
 				CE5478912D104937009545E9 /* ProfileScreenView.swift in Sources */,
 				CE5478922D104937009545E9 /* SignUpView.swift in Sources */,
+				CEB3EBDE2D128EBD00F8CE6B /* GoalsSummaryView.swift in Sources */,
 				CE5478932D104937009545E9 /* StatCardView.swift in Sources */,
 				CE5478942D104937009545E9 /* StatisticsScreenView.swift in Sources */,
 				CEB3EBD42D1158E000F8CE6B /* AddActionSheetView.swift in Sources */,

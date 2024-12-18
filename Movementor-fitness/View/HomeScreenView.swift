@@ -204,7 +204,7 @@ struct HomeScreenView: View {
                 } // Calling the custom ActionSheet View
             )
             .navigationDestination(isPresented: $navigateToSetGoalsScreen) {
-                SetGoalsScreenView()
+                GoalActivitySelectionView()
             }
             .navigationDestination(isPresented: $navigateToAddActivityScreen) {
                 AddActivityScreenView()
