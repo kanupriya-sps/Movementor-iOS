@@ -28,6 +28,10 @@ struct AddActionSheetView: View {
                            onOptionSelected("addActivity")
                            print("Option 2 Selected")
                        },
+                       .default(Text("Add Reminder")) {
+                           onOptionSelected("addReminder")
+                           print("Option 3 Selected")
+                       },
                        .cancel()
                    ]
                )

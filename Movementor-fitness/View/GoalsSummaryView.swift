@@ -14,6 +14,8 @@ struct GoalsSummaryView: View {
     let additionalField: String
     let selectedActivity: String
     
+    @EnvironmentObject var goalManager: GoalsManagerViewModel
+    
     @State private var navigateToHome = false
         
     var body: some View {
@@ -102,6 +104,12 @@ struct GoalsSummaryView: View {
             )
         }
         .background(Color(.systemGray6).edgesIgnoringSafeArea(.all))
+        // printing the added goals only for testing purpose
+        .onAppear {
+            for goals in goalManager.goals {
+                print(goals)
+            }
+        }
     }
     
     // Helper function for dynamic field names

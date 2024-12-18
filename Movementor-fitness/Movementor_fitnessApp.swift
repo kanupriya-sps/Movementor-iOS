@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct Movementor_fitnessApp: App {
+    
+    @StateObject var goalsManager = GoalsManagerViewModel() // Initialize the ViewModel
+    @StateObject var reminderManager = RemindersViewModel()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(goalsManager)  // Inject the ViewModel into the environment
+                .environmentObject(reminderManager)
         }
     }
 }

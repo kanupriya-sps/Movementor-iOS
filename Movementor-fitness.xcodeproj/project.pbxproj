@@ -43,8 +43,12 @@
 		CEB3EBD62D11689000F8CE6B /* SetGoalsScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3EBD52D11689000F8CE6B /* SetGoalsScreenView.swift */; };
 		CEB3EBD82D11689E00F8CE6B /* AddActivityScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3EBD72D11689E00F8CE6B /* AddActivityScreenView.swift */; };
 		CEB3EBDA2D119B6000F8CE6B /* GoalActivitySelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3EBD92D119B6000F8CE6B /* GoalActivitySelectionView.swift */; };
-		CEB3EBDC2D11AE0400F8CE6B /* UserGoalsMockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3EBDB2D11AE0400F8CE6B /* UserGoalsMockData.swift */; };
 		CEB3EBDE2D128EBD00F8CE6B /* GoalsSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3EBDD2D128EBD00F8CE6B /* GoalsSummaryView.swift */; };
+		CEB3EBE02D129D7C00F8CE6B /* GoalsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3EBDF2D129D7C00F8CE6B /* GoalsDataModel.swift */; };
+		CEB3EBE42D129DB500F8CE6B /* GoalsManagerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3EBE32D129DB500F8CE6B /* GoalsManagerViewModel.swift */; };
+		CEB3EBE62D12A38900F8CE6B /* AddReminderScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3EBE52D12A38900F8CE6B /* AddReminderScreenView.swift */; };
+		CEB3EBE82D12AAAD00F8CE6B /* RemindersDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3EBE72D12AAAD00F8CE6B /* RemindersDataModel.swift */; };
+		CEB3EBEA2D12AADB00F8CE6B /* RemindersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3EBE92D12AADB00F8CE6B /* RemindersViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,8 +143,12 @@
 		CEB3EBD52D11689000F8CE6B /* SetGoalsScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetGoalsScreenView.swift; sourceTree = "<group>"; };
 		CEB3EBD72D11689E00F8CE6B /* AddActivityScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddActivityScreenView.swift; sourceTree = "<group>"; };
 		CEB3EBD92D119B6000F8CE6B /* GoalActivitySelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalActivitySelectionView.swift; sourceTree = "<group>"; };
-		CEB3EBDB2D11AE0400F8CE6B /* UserGoalsMockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserGoalsMockData.swift; sourceTree = "<group>"; };
 		CEB3EBDD2D128EBD00F8CE6B /* GoalsSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsSummaryView.swift; sourceTree = "<group>"; };
+		CEB3EBDF2D129D7C00F8CE6B /* GoalsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsDataModel.swift; sourceTree = "<group>"; };
+		CEB3EBE32D129DB500F8CE6B /* GoalsManagerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsManagerViewModel.swift; sourceTree = "<group>"; };
+		CEB3EBE52D12A38900F8CE6B /* AddReminderScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReminderScreenView.swift; sourceTree = "<group>"; };
+		CEB3EBE72D12AAAD00F8CE6B /* RemindersDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersDataModel.swift; sourceTree = "<group>"; };
+		CEB3EBE92D12AADB00F8CE6B /* RemindersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersViewModel.swift; sourceTree = "<group>"; };
 		CEB50A3D2D082F3400E6B2CE /* Movementor-fitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Movementor-fitness.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB50A4D2D082F3600E6B2CE /* Movementor-fitnessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Movementor-fitnessTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB50A572D082F3600E6B2CE /* Movementor-fitnessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Movementor-fitnessUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -206,7 +214,8 @@
 			children = (
 				CE5478752D104937009545E9 /* MockHealthStore.swift */,
 				CE5478762D104937009545E9 /* UserDetailsMockData.swift */,
-				CEB3EBDB2D11AE0400F8CE6B /* UserGoalsMockData.swift */,
+				CEB3EBDF2D129D7C00F8CE6B /* GoalsDataModel.swift */,
+				CEB3EBE72D12AAAD00F8CE6B /* RemindersDataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -236,6 +245,7 @@
 				CEB3EBD72D11689E00F8CE6B /* AddActivityScreenView.swift */,
 				CEB3EBD92D119B6000F8CE6B /* GoalActivitySelectionView.swift */,
 				CEB3EBDD2D128EBD00F8CE6B /* GoalsSummaryView.swift */,
+				CEB3EBE52D12A38900F8CE6B /* AddReminderScreenView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -243,6 +253,7 @@
 		CE5478872D104937009545E9 /* Movementor-fitness */ = {
 			isa = PBXGroup;
 			children = (
+				CEB3EBE22D129D9E00F8CE6B /* ViewModel */,
 				CE5478742D104937009545E9 /* HealthKit */,
 				CE5478772D104937009545E9 /* Model */,
 				CE5478792D104937009545E9 /* Preview Content */,
@@ -326,6 +337,15 @@
 				CE5478B32D104958009545E9 /* PhoneConnector.swift */,
 			);
 			path = "Movementor-watchOS Watch App";
+			sourceTree = "<group>";
+		};
+		CEB3EBE22D129D9E00F8CE6B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CEB3EBE32D129DB500F8CE6B /* GoalsManagerViewModel.swift */,
+				CEB3EBE92D12AADB00F8CE6B /* RemindersViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		CEB50A342D082F3400E6B2CE = {
@@ -616,6 +636,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEB3EBE02D129D7C00F8CE6B /* GoalsDataModel.swift in Sources */,
 				CE54788A2D104937009545E9 /* ActivityManager.swift in Sources */,
 				CE54788B2D104937009545E9 /* HealthKitManager.swift in Sources */,
 				CEB3EBD62D11689000F8CE6B /* SetGoalsScreenView.swift in Sources */,
@@ -625,12 +646,15 @@
 				CE5478BB2D104958009545E9 /* MockData.swift in Sources */,
 				CE54788E2D104937009545E9 /* ActivityCardView.swift in Sources */,
 				CE54788F2D104937009545E9 /* ContentView.swift in Sources */,
-				CEB3EBDC2D11AE0400F8CE6B /* UserGoalsMockData.swift in Sources */,
+				CEB3EBEA2D12AADB00F8CE6B /* RemindersViewModel.swift in Sources */,
+				CEB3EBE42D129DB500F8CE6B /* GoalsManagerViewModel.swift in Sources */,
 				CE5478902D104937009545E9 /* HomeScreenView.swift in Sources */,
 				CE5478BD2D11471A009545E9 /* ScrollingDateView.swift in Sources */,
+				CEB3EBE82D12AAAD00F8CE6B /* RemindersDataModel.swift in Sources */,
 				CE5478912D104937009545E9 /* ProfileScreenView.swift in Sources */,
 				CE5478922D104937009545E9 /* SignUpView.swift in Sources */,
 				CEB3EBDE2D128EBD00F8CE6B /* GoalsSummaryView.swift in Sources */,
+				CEB3EBE62D12A38900F8CE6B /* AddReminderScreenView.swift in Sources */,
 				CE5478932D104937009545E9 /* StatCardView.swift in Sources */,
 				CE5478942D104937009545E9 /* StatisticsScreenView.swift in Sources */,
 				CEB3EBD42D1158E000F8CE6B /* AddActionSheetView.swift in Sources */,

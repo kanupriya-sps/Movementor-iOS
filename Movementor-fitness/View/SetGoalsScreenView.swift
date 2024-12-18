@@ -10,6 +10,7 @@ import SwiftUI
 struct SetGoalsScreenView: View {
     
     let selectedActivity: String
+    @EnvironmentObject var goalManager: GoalsManagerViewModel
     
     @State private var goalName: String = ""
     @State private var goalDescription: String = ""
@@ -24,13 +25,6 @@ struct SetGoalsScreenView: View {
     
     var body: some View {
             VStack(spacing: 20) {
-//                // Logo
-//                Image("appLogo")
-//                    .resizable()
-//                    .frame(width: 80, height: 80)
-//                    .foregroundColor(.blue)
-//                    .padding(.top, 50)
-//                    .padding(.bottom, 20)
 
                 Text("Set Your Goals for \(selectedActivity)")
                     .font(.system(size: 30))
@@ -90,6 +84,13 @@ struct SetGoalsScreenView: View {
                 // Submit Button
                 Button(action: {
                     // Handle goal submission
+                    goalManager.addGoal(
+                        activity: selectedActivity,
+                        name: goalName,
+                        description: goalDescription,
+                        targetDate: targetDate,
+                        additionalField: additionalField
+                    )
                     navigateToSummary = true
                     print("Goals submitted for \(selectedActivity)!")
                 }) {

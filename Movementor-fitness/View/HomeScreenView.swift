@@ -15,7 +15,8 @@ struct HomeScreenView: View {
     @State private var showActionSheet: Bool = false  // State to toggle ActionSheet
     @State private var navigateToSetGoalsScreen = false
     @State private var navigateToAddActivityScreen = false
-    
+    @State private var navigateToAddReminderScreen = false
+
     @StateObject private var healthKitManager = HealthKitManager()
     
     var body: some View {
@@ -200,6 +201,8 @@ struct HomeScreenView: View {
                         navigateToSetGoalsScreen = true
                     } else if option == "addActivity" {
                         navigateToAddActivityScreen = true
+                    } else if option == "addReminder"{
+                        navigateToAddReminderScreen = true
                     }
                 } // Calling the custom ActionSheet View
             )
@@ -208,6 +211,9 @@ struct HomeScreenView: View {
             }
             .navigationDestination(isPresented: $navigateToAddActivityScreen) {
                 AddActivityScreenView()
+            }
+            .navigationDestination(isPresented: $navigateToAddReminderScreen) {
+                AddReminderScreenView()
             }
         }
         .background(Color(.white))
