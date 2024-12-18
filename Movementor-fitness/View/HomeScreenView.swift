@@ -16,6 +16,8 @@ struct HomeScreenView: View {
     @State private var navigateToSetGoalsScreen = false
     @State private var navigateToAddActivityScreen = false
     @State private var navigateToAddReminderScreen = false
+    
+    @State private var isModalPresented = false
 
     @StateObject private var healthKitManager = HealthKitManager()
     
@@ -135,6 +137,9 @@ struct HomeScreenView: View {
                             Text("See all")
                                 .font(.subheadline)
                                 .foregroundColor(Color("pink"))
+                                .onTapGesture {
+                                    isModalPresented = true
+                                }
                         }
                         .padding(.horizontal)
                         
@@ -216,6 +221,9 @@ struct HomeScreenView: View {
                 AddReminderScreenView()
             }
         }
+        .sheet(isPresented: $isModalPresented) {
+            ActivitiesSeeAllView()
+                   }
         .background(Color(.white))
     }
 }

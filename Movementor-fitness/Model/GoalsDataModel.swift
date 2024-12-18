@@ -21,4 +21,10 @@ struct Activity: Identifiable {
     let name: String
     let imageName: String
 }
-
+struct ActivityDetails :Identifiable {
+    let id = UUID()
+    let name: String
+    let duration: String
+    let calories: String
+    let imageName: String // Image name in the assets
+}

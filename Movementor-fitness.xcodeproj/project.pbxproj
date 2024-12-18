@@ -49,6 +49,7 @@
 		CEB3EBE62D12A38900F8CE6B /* AddReminderScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3EBE52D12A38900F8CE6B /* AddReminderScreenView.swift */; };
 		CEB3EBE82D12AAAD00F8CE6B /* RemindersDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3EBE72D12AAAD00F8CE6B /* RemindersDataModel.swift */; };
 		CEB3EBEA2D12AADB00F8CE6B /* RemindersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3EBE92D12AADB00F8CE6B /* RemindersViewModel.swift */; };
+		CEB3EBEE2D12E44600F8CE6B /* ActivitiesSeeAllView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3EBED2D12E44600F8CE6B /* ActivitiesSeeAllView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -149,6 +150,7 @@
 		CEB3EBE52D12A38900F8CE6B /* AddReminderScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReminderScreenView.swift; sourceTree = "<group>"; };
 		CEB3EBE72D12AAAD00F8CE6B /* RemindersDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersDataModel.swift; sourceTree = "<group>"; };
 		CEB3EBE92D12AADB00F8CE6B /* RemindersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersViewModel.swift; sourceTree = "<group>"; };
+		CEB3EBED2D12E44600F8CE6B /* ActivitiesSeeAllView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesSeeAllView.swift; sourceTree = "<group>"; };
 		CEB50A3D2D082F3400E6B2CE /* Movementor-fitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Movementor-fitness.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB50A4D2D082F3600E6B2CE /* Movementor-fitnessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Movementor-fitnessTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB50A572D082F3600E6B2CE /* Movementor-fitnessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Movementor-fitnessUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -246,6 +248,7 @@
 				CEB3EBD92D119B6000F8CE6B /* GoalActivitySelectionView.swift */,
 				CEB3EBDD2D128EBD00F8CE6B /* GoalsSummaryView.swift */,
 				CEB3EBE52D12A38900F8CE6B /* AddReminderScreenView.swift */,
+				CEB3EBED2D12E44600F8CE6B /* ActivitiesSeeAllView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -644,6 +647,7 @@
 				CE54788C2D104937009545E9 /* MockHealthStore.swift in Sources */,
 				CE54788D2D104937009545E9 /* UserDetailsMockData.swift in Sources */,
 				CE5478BB2D104958009545E9 /* MockData.swift in Sources */,
+				CEB3EBEE2D12E44600F8CE6B /* ActivitiesSeeAllView.swift in Sources */,
 				CE54788E2D104937009545E9 /* ActivityCardView.swift in Sources */,
 				CE54788F2D104937009545E9 /* ContentView.swift in Sources */,
 				CEB3EBEA2D12AADB00F8CE6B /* RemindersViewModel.swift in Sources */,
