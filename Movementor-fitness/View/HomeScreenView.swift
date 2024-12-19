@@ -148,7 +148,7 @@ struct HomeScreenView: View {
                                 time: "Today, 08:10 AM",
                                 calories: "\(Double(healthKitManager.caloriesBurned)) cal",
                                 iconName: "jogging",
-                                distance: "2.32/5.00 miles",
+                                distance: "\(healthKitManager.runningDistance)/5.00 miles",
                                 activity: "Jogging",
                                 statusImage: "pause.circle.fill",
                                 iconColor: Color("pink")
@@ -157,7 +157,7 @@ struct HomeScreenView: View {
                                 time: "Today, 06:30 AM",
                                 calories: "\(Double(healthKitManager.caloriesBurned)) cal",
                                 iconName: "cycling",
-                                distance: "\(Int(healthKitManager.cyclingTime))/10.00 miles",
+                                distance: "\(healthKitManager.cyclingDistance)/10.00 miles",
                                 activity: "Cycling",
                                 statusImage: "checkmark.circle.fill",
                                 iconColor: .green
@@ -221,6 +221,11 @@ struct HomeScreenView: View {
                 AddReminderScreenView()
             }
         }
+        .onAppear {
+                    // Fetch data when the view appears
+                    healthKitManager.fetchWorkoutDistance(for: .running)
+                    healthKitManager.fetchWorkoutDistance(for: .cycling)
+                }
         .sheet(isPresented: $isModalPresented) {
             ActivitiesSeeAllView()
                    }

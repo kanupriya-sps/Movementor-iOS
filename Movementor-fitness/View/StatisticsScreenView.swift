@@ -12,6 +12,9 @@ struct StatisticsScreenView: View {
     @StateObject private var healthKitManager = HealthKitManager()
     @StateObject private var activityManager = ActivityManager()
     
+    @State private var cyclingDistance = ""
+    @State private var runningDistance = ""
+    
     var body: some View {
         VStack {
             if healthKitManager.isHealthDataAvailable {
@@ -39,6 +42,25 @@ struct StatisticsScreenView: View {
                 .padding(.top, 50)
             Text("\(activityManager.lastIdealState)")
                 .font(.caption)
+            
+            Text("Enter distance covered in cycling")
+            TextField("distance covered in km", text: $cyclingDistance)
+            Text("Enter distance covered in running")
+            TextField("distance covered in km", text: $runningDistance)
+            
+            Button(action: {
+                if let cyclingDistance = Double(self.cyclingDistance),
+                       let runningDistance = Double(self.runningDistance) {
+                        healthKitManager.saveWorkout(type: .cycling, distance: cyclingDistance)
+                        healthKitManager.saveWorkout(type: .running, distance: runningDistance)
+                    } else {
+                        print("Invalid input. Please enter valid numeric distances.")
+                    }
+            }){
+                Text("save details to health kit")
+            }
+            
+            
         }
         .navigationBarHidden(true)
         .onAppear {

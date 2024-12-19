@@ -26,6 +26,8 @@ class HealthKitManager: ObservableObject {
     @Published var cyclingTime: Double = 0.0
     @Published var caloriesBurned: Double = 0.0
     @Published var yogaTime: Double = 0.0
+    @Published var cyclingDistance: Double = 0.0
+    @Published var runningDistance: Double = 0.0
     @Published var isAuthorized = false
     
     // Ensure HealthKit is available on the device
@@ -76,7 +78,7 @@ class HealthKitManager: ObservableObject {
         
         // Define the data types to read and write
         let dataTypesToRead: Set<HKObjectType> = [stepCountType, heartRateType, standTimeType, exerciseTimeType, workoutType]
-        let dataTypesToWrite: Set<HKSampleType> = [stepCountType]
+        let dataTypesToWrite: Set<HKSampleType> = [stepCountType, workoutType]
         
         healthStore.requestAuthorization(toShare: dataTypesToWrite, read: dataTypesToRead) { success, error in
             DispatchQueue.main.async {
@@ -239,8 +241,8 @@ class HealthKitManager: ObservableObject {
         
         healthStore.execute(query)
         fetchCaloriesBurned(for: .activeEnergyBurned) { calories in
-                self.caloriesBurned = calories
-            }
+            self.caloriesBurned = calories
+        }
     }
     
     // Fetch workout Time
@@ -286,8 +288,8 @@ class HealthKitManager: ObservableObject {
         
         healthStore.execute(query)
         fetchCaloriesBurned(for: .activeEnergyBurned) { calories in
-               self.caloriesBurned = calories
-           }
+            self.caloriesBurned = calories
+        }
     }
     
     func fetchCaloriesBurned(for activityType: HKQuantityTypeIdentifier, completion: @escaping (Double) -> Void) {
@@ -318,32 +320,112 @@ class HealthKitManager: ObservableObject {
                 }
             }
         }
-
+        
         healthStore.execute(query)
     }
-
     
+    func saveWorkout(type: HKWorkoutActivityType, distance: Double) {
+        // Convert distance to meters
+        let distanceQuantity = HKQuantity(unit: HKUnit.meter(), doubleValue: distance * 1000) // Convert km to meters
+        
+        // Create the workout object
+        let workout = HKWorkout(
+            activityType: type,
+            start: Date(),
+            end: Date(),
+            workoutEvents: nil,
+            totalEnergyBurned: nil,
+            totalDistance: distanceQuantity,
+            metadata: nil
+        )
+        
+        // Save the workout to HealthKit
+        healthStore.save(workout) { success, error in
+            DispatchQueue.main.async {
+                if success {
+                    let activityName = type.activityName
+                    print("\(activityName) workout saved successfully with distance: \(distance) km")
+                } else if let error = error {
+                    print("Failed to save workout: \(error.localizedDescription)")
+                }
+            }
+        }
+    }
     
-    //    func fetchHeartRateData(completion: @escaping (Double?) -> Void) {
-    //        let heartRateType = HKQuantityType.quantityType(forIdentifier: .heartRate)!
-    //
-    //        let now = Date()
-    //        let startOfDay = Calendar.current.startOfDay(for: now)
-    //        let predicate = HKQuery.predicateForSamples(withStart: startOfDay, end: now, options: .strictEndDate)
-    //
-    //        let query = HKSampleQuery(sampleType: heartRateType, predicate: predicate, limit: 1, sortDescriptors: [NSSortDescriptor(key: HKSampleSortIdentifierStartDate, ascending: false)]) { query, results, error in
-    //            guard let samples = results as? [HKQuantitySample], let sample = samples.first else {
-    //                print("No heart rate data found or error occurred: \(error?.localizedDescription ?? "Unknown error")")
-    //                completion(nil)
-    //                return
-    //            }
-    //
-    //            // Heart rate is stored as beats per minute (BPM)
-    //            self.heartRate = sample.quantity.doubleValue(for: HKUnit(from: "count/min"))
-    //            completion(self.heartRate)
-    //        }
-    //
-    //        healthStore.execute(query)
-    //    }
+    func fetchWorkoutDistance(for activityType: HKWorkoutActivityType) {
+        // Define the predicate for filtering workouts based on activity type
+        let predicate = HKQuery.predicateForWorkouts(with: activityType)
+        
+        // Define the sort descriptor to get the most recent workout first
+        let sortDescriptor = NSSortDescriptor(key: HKSampleSortIdentifierStartDate, ascending: false)
+        
+        // Create the query to fetch workouts
+        let query = HKSampleQuery(
+            sampleType: HKSampleType.workoutType(),
+            predicate: predicate,
+            limit: 1, // We only need the most recent workout
+            sortDescriptors: [sortDescriptor]
+        ) { [weak self] _, results, _ in
+            guard let self = self, let workouts = results as? [HKWorkout], let latestWorkout = workouts.first else { return }
+            
+            // Get the distance of the latest workout
+            if let distance = latestWorkout.totalDistance?.doubleValue(for: .meter()) {
+                // Convert the distance from meters to kilometers
+                let totalDistanceInKilometers = distance / 1000.0
+                
+                // Print the fetched distance
+                print("Fetched distance for \(activityType.activityName): \(totalDistanceInKilometers) km")
+                
+                DispatchQueue.main.async {
+                    if activityType == .running {
+                        self.runningDistance = totalDistanceInKilometers
+                    } else if activityType == .cycling {
+                        self.cyclingDistance = totalDistanceInKilometers
+                    }
+                }
+            }
+        }
+        
+        // Execute the query
+        healthStore.execute(query)
+    }
     
 }
+
+extension HKWorkoutActivityType {
+    var activityName: String {
+        switch self {
+        case .running:
+            return "Running"
+        case .cycling:
+            return "Cycling"
+        default:
+            return "Unknown Activity"
+        }
+    }
+}
+
+
+
+
+//    func fetchHeartRateData(completion: @escaping (Double?) -> Void) {
+//        let heartRateType = HKQuantityType.quantityType(forIdentifier: .heartRate)!
+//
+//        let now = Date()
+//        let startOfDay = Calendar.current.startOfDay(for: now)
+//        let predicate = HKQuery.predicateForSamples(withStart: startOfDay, end: now, options: .strictEndDate)
+//
+//        let query = HKSampleQuery(sampleType: heartRateType, predicate: predicate, limit: 1, sortDescriptors: [NSSortDescriptor(key: HKSampleSortIdentifierStartDate, ascending: false)]) { query, results, error in
+//            guard let samples = results as? [HKQuantitySample], let sample = samples.first else {
+//                print("No heart rate data found or error occurred: \(error?.localizedDescription ?? "Unknown error")")
+//                completion(nil)
+//                return
+//            }
+//
+//            // Heart rate is stored as beats per minute (BPM)
+//            self.heartRate = sample.quantity.doubleValue(for: HKUnit(from: "count/min"))
+//            completion(self.heartRate)
+//        }
+//
+//        healthStore.execute(query)
+//    }
