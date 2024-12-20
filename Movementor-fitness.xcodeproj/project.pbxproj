@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE1B205B2D153B67001857CE /* GlobalAlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1B205A2D153B67001857CE /* GlobalAlertManager.swift */; };
 		CE5478302D094DF3009545E9 /* Movementor-watchOS Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CE54780D2D094DF1009545E9 /* Movementor-watchOS Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CE5478882D104937009545E9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5478782D104937009545E9 /* Preview Assets.xcassets */; };
 		CE5478892D104937009545E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5478832D104937009545E9 /* Assets.xcassets */; };
@@ -105,6 +106,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CE1B205A2D153B67001857CE /* GlobalAlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalAlertManager.swift; sourceTree = "<group>"; };
 		CE54780D2D094DF1009545E9 /* Movementor-watchOS Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Movementor-watchOS Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE54781C2D094DF2009545E9 /* Movementor-watchOS Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Movementor-watchOS Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE5478262D094DF3009545E9 /* Movementor-watchOS Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Movementor-watchOS Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -347,6 +349,7 @@
 			children = (
 				CEB3EBE32D129DB500F8CE6B /* GoalsManagerViewModel.swift */,
 				CEB3EBE92D12AADB00F8CE6B /* RemindersViewModel.swift */,
+				CE1B205A2D153B67001857CE /* GlobalAlertManager.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -662,6 +665,7 @@
 				CE5478932D104937009545E9 /* StatCardView.swift in Sources */,
 				CE5478942D104937009545E9 /* StatisticsScreenView.swift in Sources */,
 				CEB3EBD42D1158E000F8CE6B /* AddActionSheetView.swift in Sources */,
+				CE1B205B2D153B67001857CE /* GlobalAlertManager.swift in Sources */,
 				CE5478952D104937009545E9 /* TabBarView.swift in Sources */,
 				CE5478962D104937009545E9 /* Movementor_fitnessApp.swift in Sources */,
 				CEB3EBD82D11689E00F8CE6B /* AddActivityScreenView.swift in Sources */,

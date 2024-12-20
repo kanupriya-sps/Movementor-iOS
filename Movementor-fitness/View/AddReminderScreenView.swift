@@ -12,6 +12,7 @@ struct AddReminderScreenView: View {
     @State private var selectedDuration = 1 // Default duration (1 minute)
     @State private var selectedUnit = "Minutes" // Default unit
     @State private var reminderMessage = "" // Reminder message input
+    @State private var navigateToHome = false
     
     let durationOptions = [1, 5, 10, 15, 30, 60] // Example duration options (in minutes)
     let unitOptions = ["Minutes", "Hours", "Days"] // Different time unit options
@@ -52,6 +53,8 @@ struct AddReminderScreenView: View {
                 // Button to confirm reminder setup
                 Button(action: {
                     reminderVM.setReminder(reminderMessage: reminderMessage, selectedDuration: selectedDuration, selectedUnit: selectedUnit)
+                    // Trigger navigation to Home Screen
+                    navigateToHome = true
                 }) {
                     Text("Set Reminder")
                         .font(.title2)
@@ -64,6 +67,11 @@ struct AddReminderScreenView: View {
                 .padding()
             Spacer()
         }
+        NavigationLink(
+            destination: TabBarView().navigationBarBackButtonHidden(true),
+            isActive: $navigateToHome,
+            label: { EmptyView() }
+        )
 //        // printing only for testing
 //        .onAppear{
 //            for reminders in reminderVM.reminders {

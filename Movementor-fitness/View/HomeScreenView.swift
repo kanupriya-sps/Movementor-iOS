@@ -226,6 +226,18 @@ struct HomeScreenView: View {
                     healthKitManager.fetchWorkoutDistance(for: .running)
                     healthKitManager.fetchWorkoutDistance(for: .cycling)
                 }
+//        .onAppear {
+//            healthKitManager.startInactivityMonitoring()
+//                }
+//                .alert(isPresented: $healthKitManager.showAlert) {
+//                    Alert(
+//                        title: Text("Time to Move!"),
+//                        message: Text("You've been inactive for 2 hours. Take a short walk or stretch!"),
+//                        dismissButton: .default(Text("OK"), action: {
+//                            healthKitManager.showAlert = false
+//                        })
+//                    )
+//                }
         .sheet(isPresented: $isModalPresented) {
             ActivitiesSeeAllView()
                    }

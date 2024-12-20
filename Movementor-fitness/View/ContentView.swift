@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject private var alertManager = GlobalAlertManager.shared
+    
     var body: some View {
         NavigationStack {
                 VStack(spacing: 0) {
@@ -43,6 +46,14 @@ struct ContentView: View {
                 .edgesIgnoringSafeArea(.all)
                 .navigationBarHidden(true)
         }
+        .alert(isPresented: $alertManager.showAlert) {
+                   Alert(
+                       title: Text(alertManager.alertTitle),
+                       message: Text(alertManager.alertMessage),
+                       dismissButton: .default(Text("OK"))
+                   )
+               }
+               .environmentObject(alertManager)
     }
 }
 

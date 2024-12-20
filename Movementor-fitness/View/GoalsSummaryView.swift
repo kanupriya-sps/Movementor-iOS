@@ -97,11 +97,6 @@ struct GoalsSummaryView: View {
             .padding(.horizontal, 20)
             .padding(.bottom, 20)
             Spacer()
-            NavigationLink(
-                destination: TabBarView().navigationBarBackButtonHidden(true),
-                isActive: $navigateToHome,
-                label: { EmptyView() }
-            )
         }
         .background(Color(.systemGray6).edgesIgnoringSafeArea(.all))
         // printing the added goals only for testing purpose
@@ -110,6 +105,11 @@ struct GoalsSummaryView: View {
                 print(goals)
             }
         }
+        NavigationLink(
+            destination: TabBarView().navigationBarBackButtonHidden(true),
+            isActive: $navigateToHome,
+            label: { EmptyView() }
+        )
     }
     
     // Helper function for dynamic field names

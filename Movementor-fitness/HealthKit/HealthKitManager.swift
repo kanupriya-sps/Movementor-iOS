@@ -29,6 +29,12 @@ class HealthKitManager: ObservableObject {
     @Published var cyclingDistance: Double = 0.0
     @Published var runningDistance: Double = 0.0
     @Published var isAuthorized = false
+   // @Published var showAlert: Bool = false
+    @Published var lastActiveTimestamp: Date = Date() // Timestamp of the last activity
+    
+    // for calculating ideal time
+    var lastStepCount: Double = 0
+    var lastExerciseTime: Double = 0
     
     // Ensure HealthKit is available on the device
     var isHealthDataAvailable: Bool {
@@ -240,9 +246,9 @@ class HealthKitManager: ObservableObject {
         }
         
         healthStore.execute(query)
-        fetchCaloriesBurned(for: .activeEnergyBurned) { calories in
-            self.caloriesBurned = calories
-        }
+//        fetchCaloriesBurned(for: .activeEnergyBurned) { calories in
+//            self.caloriesBurned = calories
+//        }
     }
     
     // Fetch workout Time
@@ -390,6 +396,38 @@ class HealthKitManager: ObservableObject {
         healthStore.execute(query)
     }
     
+    func checkForInactivity() {
+        let currentTime = Date()
+        
+        // If step count or exercise time has changed, update last active timestamp
+        if self.stepCount != lastStepCount || self.exerciseTime != lastExerciseTime {
+            lastActiveTimestamp = currentTime
+            lastStepCount = self.stepCount
+            lastExerciseTime = self.exerciseTime
+        }
+        
+        // Calculate inactivity duration
+        let inactivityDuration = currentTime.timeIntervalSince(lastActiveTimestamp)
+        
+        // Show alert if inactive for 2 hours (7200 seconds)
+        if inactivityDuration >= 7200 {
+            //                    DispatchQueue.main.async {
+            //                        self.showAlert = true
+            //                    }
+            GlobalAlertManager.shared.triggerAlert(
+                title: "Time to Move!",
+                message: "You've been inactive for 2 hours. Take a short walk or stretch!"
+            )
+        }
+    }
+    
+    func startInactivityMonitoring() {
+        Timer.scheduledTimer(withTimeInterval: 300, repeats: true) { _ in // Check every 5 minutes
+            self.fetchStepCount()
+            self.fetchExerciseTime()
+            self.checkForInactivity()
+        }
+    }
 }
 
 extension HKWorkoutActivityType {

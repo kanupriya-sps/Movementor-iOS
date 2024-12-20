@@ -18,6 +18,9 @@ struct Movementor_fitnessApp: App {
             ContentView()
                 .environmentObject(goalsManager)  // Inject the ViewModel into the environment
                 .environmentObject(reminderManager)
+                .onAppear {
+                    HealthKitManager().startInactivityMonitoring()
+                }
         }
     }
 }
